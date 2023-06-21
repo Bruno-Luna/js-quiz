@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <title>Quiz | Traditional Catholicism</title>
+</head>
+
+<style>
+  .btnAgain {
+    display: none;
+  }
+  img {
+    max-width: 1.2rem;
+    margin-left: 1.6rem;
+  }
+</style>
+
+<body>
+  <div class="intro py-3 bg-primary text-center">
+    <div class="container">
+      <h2 class="my-5 text-white">Desafie seus conhecimentos sobre o <u>Catolicismo</u>:</h2>
+    </div>
+  </div>
+
+  <div class="quiz py-4 bg-dark">
+    <div class="container">
+      <form class="quiz-form text-light">
+
+        <div class="my-5">
+          <p class="lead font-weight-normal">1. Quem é o autor de 'Acerbo Nimis'?</p>
+          <div class="form-check my-2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion1" value="A">
+              Papa Leão XIII
+            </label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion1" value="B">
+              Papa Pio IX
+            </label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion1" value="C">
+              São Pio X, Papa
+            </label>
+          </div>
+        </div>
+
+        <div class="my-5">
+          <p class="lead font-weight-normal">2. Qual foi o dogma proclamado pelo Concílio Vaticano I ?</p>
+          <div class="form-check my-2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion2" value="A">
+              Terra plana
+            </label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion2" value="B">
+              Infalibilidade Papal
+            </label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion2" value="C">
+              Imaculada Conceição
+            </label>
+          </div>
+        </div>
+
+        <div class="my-5">
+          <p class="lead font-weight-normal">3. Marque a alternativa que contêm <u>apenas</u> obras de Santo Afonso de
+            Ligório:</p>
+          <div class="form-check my-2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion3" value="A">
+              Preparação para a morte, A prática do amor a Jesus Cristo e Glórias de Maria.
+            </label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion3" value="B">
+              Glórias de Maria, Tratado do inferno, Meditações para todos os dias do ano.
+            </label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion3" value="C">
+              Teologia Moral, Tratado da castidade e Filotéia.
+            </label>
+          </div>
+        </div>
+
+        <div class="my-5">
+          <p class="lead font-weight-normal">4. Dom Vital pertencia a qual ordem religiosa?</p>
+          <div class="form-check my-2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion4" value="A">
+              Companhia de Jesus - Jesuítas
+            </label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion4" value="B">
+              Ordem da Cartuxa
+            </label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion4" value="C">
+              Ordem dos Frades Menores Capuchinhos
+            </label>
+          </div>
+        </div>
+
+        <div class="my-5">
+          <p class="lead font-weight-normal">5. Dom Marcel Lefebvre foi nomeado pelo Papa Pio XII para ser:</p>
+          <div class="form-check my-2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion5" value="A">
+              Núncio Apostólico do Congo
+            </label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion5" value="B">
+              Delegado Apostólico para a África Francesa
+            </label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <label class="form-check-label">
+              <input type="radio" name="inputQuestion5" value="C">
+              Secretário de Estado do Vaticano
+            </label>
+          </div>
+        </div>
+        <small>* Para cada pergunta certa soma-se 25 pontos.</small>
+        <hr>
+        <div class="d-flex justify-content-around align-items-center">
+          <span class="score"></span>
+          <button class="btn bg-primary text-light btnSend">Enviar</button>
+          <button class="btn bg-primary text-light btnAgain">Refazer</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+
+</html>
